@@ -1,0 +1,58 @@
+import { FlowerType } from '../types';
+
+export const PRESET_FLOWERS: FlowerType[] = [
+  {
+    id: 'rose_red',
+    name: '經典紅玫瑰',
+    englishName: 'Classic Red Rose',
+    color: '#D9383A',
+    meaning: '熱烈純粹・唯一的真心與摯愛',
+    category: 'flower',
+    assetUrl: '/assets/flowers/flower_rose.png',
+  },
+  {
+    id: 'tulip_pink',
+    name: '柔粉鬱金香',
+    englishName: 'Soft Pink Tulip',
+    color: '#F48C9A',
+    meaning: '永恆的愛・溫柔的告白與眷戀',
+    category: 'flower',
+    assetUrl: '/assets/flowers/flower_tulip.png',
+  },
+  {
+    id: 'sunflower_golden',
+    name: '暖陽向日葵',
+    englishName: 'Golden Sunflower',
+    color: '#F59E0B',
+    meaning: '信念與光芒・默默守護與熱情',
+    category: 'flower',
+    assetUrl: '/assets/flowers/flower_sunflower.png',
+  },
+  {
+    id: 'daisy_white',
+    name: '晨曦小雛菊',
+    englishName: 'Morning Daisy',
+    color: '#E5A93C',
+    meaning: '純潔天真・隱藏在心中的愛戀',
+    category: 'flower',
+    assetUrl: '/assets/flowers/flower_daisy.png',
+  },
+  {
+    id: 'babys_breath',
+    name: '白滿天星',
+    englishName: "Airy Baby's Breath",
+    color: '#718096',
+    meaning: '甘做配角・純淨純白的情思',
+    category: 'foliage',
+    assetUrl: '/assets/flowers/flower_babysbreath.png',
+  },
+  {
+    id: 'lavender_purple',
+    name: '幽香薰衣草',
+    englishName: 'Fragrant Lavender',
+    color: '#8A7BB3',
+    meaning: '等待愛情・寧靜心安與療癒',
+    category: 'flower',
+    assetUrl: '/assets/flowers/flower_lavender.png',
+  },
+];

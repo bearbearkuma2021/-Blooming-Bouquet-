@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #F8F6F0;
+    color: #2D3748;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-tc {
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .font-display {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Subtle hand-made paper noise pattern */
+.bg-paper-texture {
+  background-color: #F9F7F2;
+  background-image: radial-gradient(#E5DFD3 0.75px, transparent 0.75px), radial-gradient(#E5DFD3 0.75px, #F9F7F2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-kraft-texture {
+  background-color: #DFCFB9;
+  background-image: radial-gradient(#C8B59B 0.8px, transparent 0.8px);
+  background-size: 20px 20px;
+}
+
+/* Gentle wind sway animation for garden plants */
+@keyframes sway-slow {
+  0%, 100% {
+    transform: rotate(-1.5deg) translateY(0);
+  }
+  50% {
+    transform: rotate(2deg) translateY(-2px);
+  }
+}
+
+@keyframes sway-medium {
+  0%, 100% {
+    transform: rotate(2.5deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-2deg) translateY(-3px);
+  }
+}
+
+@keyframes meteor-fall {
+  0% {
+    transform: translate(0, 0) rotate(-35deg) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-300px, 300px) rotate(-35deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes rain-fall {
+  0% {
+    transform: translateY(-20px) translateX(0);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) translateX(-20px);
+    opacity: 0.1;
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(18px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes ripple-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes petal-float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(70px, 90px) rotate(140deg);
+    opacity: 0;
+  }
+}
+
+.animate-cloud-drift {
+  animation: cloud-drift 14s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: ripple-pulse 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.animate-petal {
+  animation: petal-float 7s ease-in-out infinite;
+}
+
+.animate-sway-slow {
+  animation: sway-slow 5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-sway-medium {
+  animation: sway-medium 3.8s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-meteor {
+  animation: meteor-fall 2.2s linear infinite;
+}
+
+/* Custom scrollbars for botanical feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4BCAC;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A69E8C;
+}
+
+/* Flower wave swoosh right-to-left transition */
+@keyframes flower-swoosh-left {
+  0% {
+    transform: translate3d(120vw, 0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-130vw, var(--tw-drift-y, 0px), 0) rotate(var(--tw-rotation, 360deg));
+    opacity: 0;
+  }
+}
+
+@keyframes fade-veil {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}

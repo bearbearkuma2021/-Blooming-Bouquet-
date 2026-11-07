@@ -1,0 +1,8 @@
+{
+  "name": "靜綻花語 Blooming Bouquet",
+  "description": "2D 互動式花田・花束・心意卡片 Web App。漫步四大時段花田、採收繁花、親手編排包裝花束並創作手寫祝福卡片。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
